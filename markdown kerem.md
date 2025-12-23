@@ -1,115 +1,124 @@
+# 📝 Temel Sözdizimi Rehberi (Markdown Guide)
+## **Kerem Atlı**
 
-# 📝 Markdown Nedir ve Nasıl Kullanılır?
+Markdown, web üzerinde düz metin formatında yazı yazmayı ve bu yazıları HTML'e dönüştürerek kolayca biçimlendirmeyi sağlayan hafif bir işaretleme dilidir. Neredeyse tüm Markdown uygulamaları, orijinal tasarım belgesinde ana hatlarıyla belirtilen temel sözdizimini destekler.
 
-Markdown, web üzerinde düz metin formatında yazı yazmayı ve bu yazıları HTML'e dönüştürerek kolayca biçimlendirmeyi sağlayan hafif bir işaretleme dilidir.
+## Başlıklar (Headings)
 
-Temel amacı, bir metin editöründe dahi okunması kolay ve düzenli görünen metinler oluşturmaktır. Özellikle GitHub, proje dökümantasyonları ve benioku (README) dosyaları için standart haline gelmiştir.
+Başlık oluşturmak için kelime veya ifadenin önüne kare (#) işareti ekleyin. Kullandığınız kare sayısı HTML'deki başlık seviyesine (H1-H6) karşılık gelir.
 
-## 🌟 Neden Markdown Kullanılır?
+| Markdown | HTML | Görünüm |
+| :--- | :--- | :--- |
+| `# Başlık Seviyesi 1` | `<h1>Başlık Seviyesi 1</h1>` | <h1>Başlık Seviyesi 1</h1> |
+| `## Başlık Seviyesi 2` | `<h2>Başlık Seviyesi 2</h2>` | <h2>Başlık Seviyesi 2</h2> |
+| `### Başlık Seviyesi 3` | `<h3>Başlık Seviyesi 3</h3>` | <h3>Başlık Seviyesi 3</h3> |
 
-1. Basitlik ve Okunabilirlik: Yazdığınız ham metin bile biçimlendirilmiş hali kadar temiz ve anlaşılırdır.
+### Başlıklar İçin En İyi Uygulamalar
 
-2. Hafiflik: HTML gibi karmaşık etiketler yerine basit semboller (#, *, >) kullanır.
+Markdown işlemcileri arasında uyumluluk sağlamak için her zaman `#` işaretinden sonra bir boşluk bırakın.
 
-3. Hız: Biçimlendirme (kalın, başlık vb.) klavyeden ayrılmadan saniyeler içinde yapılabilir.
+> [!TIP]
+> **Doğru Kullanım:** `## Başlık`  
+> **Yanlış Kullanım:** `##Başlık`
 
-4. Platform Bağımsızlığı: GitHub, GitLab, Stack Overflow, Reddit ve birçok not alma uygulamasında standart olarak desteklenir.
+---
 
-## 🛠️ Temel Markdown Söz Dizimi (Syntax)
+## Vurgulama (Emphasis)
 
-Markdown, metinleri biçimlendirmek için aşağıdaki basit sembolleri kullanır:
+Metni kalın veya italik yaparak önemli kısımları vurgulayabilirsiniz.
 
-### 1. Başlıklar (Headings)
-Başlıklar, bir ile altı arasında değişen sayıda # işareti kullanılarak oluşturulur. Tek # en büyük başlığı (H1) temsil eder.
+### Kalın (Bold)
+Metni kalın yapmak için iki yıldız (`**`) veya iki alt çizgi (`__`) kullanın.
 
-Örnek:
-- # Ana Başlık	H1 (En Büyük)
-- ## Alt Başlık	H2
-- ### Üçüncü Seviye Başlık	H3
+*   **Örnek:** `**Kalın Metin**` -> **Kalın Metin**
 
+### İtalik (Italic)
+Metni italik yapmak için tek yıldız (`*`) veya tek alt çizgi (`_`) kullanın.
 
-### 2. Paragraf ve Satır Sonu
+*   **Örnek:** `*İtalik Metin*` -> *İtalik Metin*
 
-Markdown'da yeni bir paragraf oluşturmak için iki kez enter tuşuna basarak boş bir satır bırakmanız gerekir.     
-Aynı paragraf içinde yeni bir satıra geçmek isterseniz, satırın sonuna iki boşluk bırakmanız gerekir.
+### Kalın ve İtalik (Bold and Italic)
+Her ikisini aynı anda uygulamak için üç yıldız (`***`) kullanın.
 
-### 3. Vurgulama (Kalın, İtalik)
-Metinleri kalın veya italik yapmak için yıldız (*) veya alt çizgi (_) kullanılır.
+*   **Örnek:** `***Kalın ve İtalik***` -> ***Kalın ve İtalik***
 
-italik: *italik metin* veya _italik metin_
-kalın: **kalın metin** veya __kalın metin__
-ikisi birden: ***kalın ve italik***
+---
 
+## Listeler (Lists)
 
-### 4. Listeler
+Öğeleri sıralı veya sırasız listeler halinde düzenleyebilirsiniz.
 
-**A. Sırasız Liste (Unordered List)**  
-Her bir öğenin başına *, + veya - işareti koyulur.
+### Sırasız Listeler (Unordered Lists)
+Öğelerin başına tire (`-`), artı (`+`) veya yıldız (`*`) ekleyin.
 
-Örnek: 
- * Birinci madde
- * İkinci madde
-    * Alt madde
-
-**B. Sıralı Liste (Ordered List)**  
-Öğelerin başına rakamlar ve nokta (.) konulur.
-
-Örnek: 
-1. Birinci adım
-2. İkinci adım
-3. Üçüncü adım
-
-### 5. Bağlantılar (Links)
-Metni bir web adresine bağlamak için kullanılır.
-
-- [Bağlantı Metni](URL Adresi)
-
-Örnek: [Google'a Gitmek İçin](https://www.google.com)
-
-### 6. Kod Blokları
-Yazılımcılar için kodları göstermenin en temel yoludur.
-
-- Satır İçi Kod: Tek bir ters tırnak işareti arasına yazılır.
-
-     - Örnek: `Bu bir tek satırlık koddur.`  
-          - `print("Hello")`
-
-**Çok Satırlı Kod Bloğu:** Üç ters tırnak işareti (```) ile başlatılır ve bitirilir. Başlangıç işaretinden sonra dilin adını yazarak kodun söz dizimi vurgusunu (syntax highlighting) açabilirsiniz.
-
-```python
-def merhaba_dunya():
-    print("Merhaba, GitHub!")
+```markdown
+- Elma
+- Armut
+  - Amasya Elması (Alt madde için 2 boşluk bırakın)
 ```
 
+### Sıralı Listeler (Ordered Lists)
+Öğelerin başına rakam ve nokta (`1.`) ekleyin.
 
-### 7. Resimler (Images)
+1. Birinci Adım
+2. İkinci Adım
+3. Üçüncü Adım
 
-Markdown'da resim eklemek, bağlantı (link) eklemeye çok benzerdir; tek farkı en başta ünlem işareti (!) kullanılmasıdır.
+---
 
-**Yazılışı:**
+## Bağlantılar (Links)
 
-![Proje Logosu](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyk8aG1ngkGB5_k74uGlLYcUch2JxUubdg8g&s)  
+Bağlantı oluşturmak için bağlantı metnini köşeli parantez içine, URL'yi ise normal parantez içine alın.
 
- Alternatif olarak (Aynı klasördeki resim için):  
-![Veri Analizi Grafiği](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyk8aG1ngkGB5_k74uGlLYcUch2JxUubdg8g&s)
+**Sözdizimi:** `[Metin](URL)`
 
-### 8. Alıntılar (Blockquotes)
-Bir metni alıntılamak için satırın başına > işareti konulur.
+*   **Örnek:** `[Google'a Git](https://www.google.com)` -> [Google'a Git](https://www.google.com)
 
-> Bu metin bir alıntıdır.
+---
 
-### 9. Tablo Oluşturma
+## Resimler (Images)
 
-**Yazılışı:**
+Resim eklemek bağlantı eklemeye benzer, ancak başında bir ünlem işareti (`!`) bulunur.
 
-| Adı | Tipi | Açıklama |
-| :--- | :--- | :--- |
-| **Başlıklar** | :--- | (Hizalamayı Belirtir) |
-| `#` | Başlık | Ana Başlık Oluşturur |
-| `*` | Vurgu | İtalik Yazar |
+**Sözdizimi:** `![Alt Metin](Resim-URL-veya-Yolu)`
 
+*   **Örnek:** `![Markdown Logosu](https://markdown-here.com/img/icon256.png)`
 
+---
 
+## Kod (Code)
 
+### Satır İçi Kod
+Kısa kod parçalarını tek ters tırnak (`` ` ``) içine alın.
 
+*   **Örnek:** `print("Merhaba Dünya")` bir Python komutudur.
 
+### Kod Blokları
+Daha uzun kod blokları için üç ters tırnak (``` ``` ```) kullanın.
+
+```python
+def selamla():
+    print("Merhaba, Markdown dünyasına hoş geldin!")
+```
+
+---
+
+## Alıntılar (Blockquotes)
+
+Alıntı oluşturmak için satırın başına `>` işareti ekleyin.
+
+> Markdown, yazarların yazılarını hızlıca biçimlendirmesine olanak tanır.
+>
+> — Markdownguide.org
+
+---
+
+## Tablolar (Tables)
+
+Sütunları ayırmak için dik çizgi (`|`), başlık satırını ayırmak için tire (`-`) kullanın.
+
+| Özellik | Açıklama |
+| :--- | :--- |
+| Sola Hizalı | `:---` |
+| Ortalanmış | `:---:` |
+| Sağa Hizalı | `---:` |
