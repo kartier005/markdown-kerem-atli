@@ -3,57 +3,67 @@ A) #
 B) *
 C) -
 D) >
+Cevap: A
 
 2. ## Başlık ifadesi neyi temsil eder?
 A) 2. seviye başlığı
 B) 1. seviye başlığı
 C) Kalın metni
 D) Kod bloğunu
+Cevap: A
 
 3. Kalın (bold) metin yazmak için doğru kullanım hangisidir?
 A) **metin**
 B) _metin_
 C) `metin`
 D) ~~metin~~
+Cevap: A
 
 4. Eğik (italic) metin yazmak için hangisi kullanılabilir?
 A) _metin_
 B) **metin**
 C) `metin`
 D) ## metin
+Cevap: A
 
 5. Sırasız (madde işaretli) liste oluşturmak için hangisi doğrudur?
 A) * Madde
 B) 1. Madde
 C) # Madde
 D) > Madde
+Cevap: A
 
 6. Aşağıdakilerden hangisi numaralı liste oluşturur?
 A) 1. Madde
 B) * Madde
 C) - Madde
 D) # Madde
+Cevap: A
 
 7. Markdown’da bağlantı (link) eklemek için doğru sözdizimi hangisidir?
 A) [Metin](link)
 B) (Metin)[link]
 C) Metin(link)
 D) <Metin>(link)
+Cevap: A
 
 8. Resim eklerken bağlantı sözdizimine ek olarak hangi karakter kullanılır?
 A) !
 B) #
 C) *
 D) >
+Cevap: A
 
 9. Markdown’da kod bloğu oluşturmak için hangi karakter üç kez kullanılır?
 A) ```
 B) ***
 C) ---
 D) ###
+Cevap: A
 
 10. Markdown’da yatay çizgi (horizontal rule) oluşturmak için hangisi kullanılabilir?
 A) ---
 B) --
 C) ==
 D) ///
+Cevap: A
